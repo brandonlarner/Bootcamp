@@ -28,15 +28,11 @@ def bereken_bedrag_inc(bedrag_ex):
     bedrag_incl = round(bedrag_ex * BTW, 2)
     return bedrag_incl
 
-# testjes
-#     print(bereken_bedrag_inc(100))
-#     print(bereken_bedrag_inc(50))
-
 bedragen = (3.15, 2.43, 1.99)
 
 for bedrag in bedragen:
     bedrag_in = bereken_bedrag_inc(bedrag)
-    print(f'excl.: € {bedrag} incl: € {bedrag_in}')
+    print(f'excl.: € {bedrag} incl.: € {bedrag_in}')
 
 
 
